@@ -1,10 +1,11 @@
-import Navigation from '../components/Navigation'
+export const metadata = {
+  title: 'Cabins'
+}
 
 export default function Cabins() {
   return (
     <div>
-      <Navigation />
-      <h1>Cabins - The Wild Oasis</h1>
+      <h3>Cabins - The Wild Oasis</h3>
     </div>
   )
 }

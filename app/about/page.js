@@ -1,3 +1,11 @@
+export const metadata = {
+  title: 'About'
+}
+
 export default function About() {
-  return <div>About the Wild Oasis</div>
+  return (
+    <div>
+      <h3>About the Wild Oasis</h3>
+    </div>
+  )
 }
