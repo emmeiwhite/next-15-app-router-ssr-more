@@ -1,3 +1,5 @@
+// import { useState } from 'react'
+
 export const metadata = {
   title: 'Cabins'
 }
@@ -5,6 +7,7 @@ export const metadata = {
 export default async function Cabins() {
   // RSC : By Default
   // Fetching data in RSC: This is done on the server itself & not on the client side!
+  //   const [random, setRandom] = useState(123): Note we cannot use hooks in RSC
 
   const res = await fetch('https://jsonplaceholder.typicode.com/users')
   const data = await res.json()
