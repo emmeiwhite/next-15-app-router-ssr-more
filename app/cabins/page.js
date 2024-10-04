@@ -1,5 +1,7 @@
 // import { useState } from 'react'
 
+import Counter from '../components/Counter'
+
 export const metadata = {
   title: 'Cabins'
 }
@@ -20,6 +22,8 @@ export default async function Cabins() {
           <li key={user.id}>{user.name}</li>
         ))}
       </ul>
+
+      <Counter />
     </div>
   )
 }
