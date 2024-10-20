@@ -1,11 +1,9 @@
-export const metadata = {
-  title: 'The Wild Oasis'
-}
-
-export default function RootLayout({ children }) {
+export default function RootLayout() {
   return (
     <html>
-      <body>{children}</body>
+      <body>
+        <h1>Experimenting with layout.js page!</h1>
+      </body>
     </html>
   )
 }
