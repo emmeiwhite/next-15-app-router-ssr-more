@@ -3,7 +3,9 @@ export default function RootLayout({ children }) {
     <html>
       <body>
         <header>I am the Header</header>
-        {children}
+
+        <main>{children}</main>
+
         <footer>I am a Footer</footer>
       </body>
     </html>
