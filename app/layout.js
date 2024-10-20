@@ -1,12 +1,22 @@
+import Logo from './components/Logo'
+import Navigation from './components/Navigation'
+
+export const metadata = {
+  title: 'The Wild Oasis'
+}
+
 export default function RootLayout({ children }) {
   return (
     <html>
       <body>
-        <header>I am the Header</header>
+        <header>
+          <Logo />
+          <Navigation />
+        </header>
 
         <main>{children}</main>
 
-        <footer>I am a Footer</footer>
+        <footer>&copy; copyright The Wild Oasis App</footer>
       </body>
     </html>
   )
