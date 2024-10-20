@@ -1,8 +1,10 @@
-export default function RootLayout() {
+export default function RootLayout({ children }) {
   return (
     <html>
       <body>
-        <h1>Experimenting with layout.js page!</h1>
+        <header>I am the Header</header>
+        {children}
+        <footer>I am a Footer</footer>
       </body>
     </html>
   )
