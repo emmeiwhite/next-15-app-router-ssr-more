@@ -1,12 +1,16 @@
 'use client'
 import { useState } from 'react'
 
-export default function Counter() {
+export default function Counter({ users }) {
   const [count, setCount] = useState(0)
   return (
     <div>
       <h2>This is a React Client Component! </h2>
-      <div>Current Count: {count}</div>
+      <div>
+        Current Count: <strong>{count}</strong>
+      </div>
+
+      <button onClick={() => setCount(c => c + 1)}>update count</button>
 
       <div>
         <h3> Always Remember a General Rule:</h3>
